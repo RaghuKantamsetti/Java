@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+       
+       <tiles-definitions>
+       
+      	<definition name="base-definition" template="/WEB-INF/layouts/layout1.jsp">
+       				 <put-attribute name="title" value="" />   
+       				 <put-attribute name="header" value="/WEB-INF/view/header.jsp" />  
+     				 <put-attribute name="body" value="" />  
+    			     <put-attribute name="footer" value="/WEB-INF/view/footer.jsp" />  
+     	  </definition>
+     	  
+     	  <definition name="index" extends="base-definition">
+     	         				 <put-attribute name="title" value="Upma Online Shopee get all your favourite's" />   
+     	       				     <put-attribute name="body" value="/WEB-INF/view/index-body.jsp" />  
+     	  </definition>
+     	   <definition name="register" extends="base-definition">
+     	         				 <put-attribute name="title" value="SignUP page" />   
+     	       				     <put-attribute name="body" value="/WEB-INF/view/register.jsp" />  
+     	  </definition>
+     	   <definition name="login" extends="base-definition">
+     	         				<put-attribute name="title" value="Login page" />   
+     	       				    <put-attribute name="body" value="/WEB-INF/view/login.jsp" />  
+     	  </definition>
+     	   <definition name="email" extends="base-definition">
+     	         				<put-attribute name="title" value="SignUP page" />   
+     	       				    <put-attribute name="body" value="/WEB-INF/view/email.jsp" />  
+     	  </definition>
+     	    <definition name="username" extends="base-definition">
+     	         				<put-attribute name="title" value="SignUP page" />   
+     	       				    <put-attribute name="body" value="/WEB-INF/view/username.jsp" />  
+     	  </definition>
+     	  <definition name="update-form" extends="base-definition">
+     	         				<put-attribute name="title" value="SignUP page" />   
+     	       				    <put-attribute name="body" value="/WEB-INF/view/update-form.jsp" />  
+     	  </definition>
+     	  <definition name="check-username" extends="base-definition">
+     	         				<put-attribute name="title" value="SignUP page" />   
+     	       				    <put-attribute name="body" value="/WEB-INF/view/check-username.jsp" />  
+     	  </definition>
+     	  <definition name="base-definition-main" template="/WEB-INF/layouts/layout1.jsp">
+       				 <put-attribute name="title" value="" />   
+       				 <put-attribute name="header" value="/WEB-INF/view/header-main.jsp" />  
+     				 <put-attribute name="body" value="" />  
+    			     <put-attribute name="footer" value="/WEB-INF/view/footer.jsp" />  
+     	  </definition>
+     	   <definition name="main-page" extends="base-definition-main">
+     	         				<put-attribute name="title" value="Upma Online Shopee get all your favourite's" />   
+     	       				    <put-attribute name="body" value="/WEB-INF/view/index-body-main.jsp" />  
+     	  </definition>
+     	  <definition name="add-product-form" extends="base-definition-main">
+     	         				<put-attribute name="title" value="Add product page" />   
+     	       				    <put-attribute name="body" value="/WEB-INF/view/add-product-form.jsp" />  
+     	  </definition>
+     	   <definition name="access-denied" extends="base-definition-main">
+     	         				<put-attribute name="title" value="Access Denied" />   
+     	       				    <put-attribute name="body" value="/WEB-INF/view/access-denied.jsp" />  
+     	  </definition>
+     	   <definition name="plp-page" extends="base-definition-main">
+     	         				<put-attribute name="title" value="Products list page" />   
+     	       				    <put-attribute name="body" value="/WEB-INF/view/plp-page.jsp" />  
+     	  </definition>
+     	  
+     	  <definition name="pdp-page" extends="base-definition-main">
+     	         				<put-attribute name="title" value="Products list page" />   
+     	       				    <put-attribute name="body" value="/WEB-INF/view/pdp-page.jsp" />  
+     	  </definition>
+     	  <definition name="cart-details-page" extends="base-definition-main">
+     	         				<put-attribute name="title" value="Cart Details" />   
+     	       				    <put-attribute name="body" value="/WEB-INF/view/cart-details-page.jsp" />  
+     	  </definition>
+     	  <definition name="order-details-page" extends="base-definition-main">
+     	         				<put-attribute name="title" value="Order Details" />   
+     	       				    <put-attribute name="body" value="/WEB-INF/view/order-details-page.jsp" />  
+     	  </definition>
+     	  
+     	  <definition name="profile" extends="base-definition-main">
+     	         				<put-attribute name="title" value="Profile page" />   
+     	       				    <put-attribute name="body" value="/WEB-INF/view/profile.jsp" />  
+     	  </definition>
+     	    <definition name="empty-orders" extends="base-definition-main">
+     	         				<put-attribute name="title" value="Order Details" />   
+     	       				    <put-attribute name="body" value="/WEB-INF/view/empty-orders.jsp" />  
+     	  </definition>
+     	  <definition name="empty-cart" extends="base-definition-main">
+     	         				<put-attribute name="title" value="Order Details" />   
+     	       				    <put-attribute name="body" value="/WEB-INF/view/empty-cart.jsp" />  
+     	  </definition>
+     	  
+       </tiles-definitions>
